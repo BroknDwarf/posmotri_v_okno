@@ -68,6 +68,7 @@ video {
   position: relative;
   inline-size: 711px;
   margin: 0 0 11px;
+  height: 386px;
 }
 
 .search-form {
@@ -143,10 +144,6 @@ video {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
-  outline: none;
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -160,12 +157,12 @@ video {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  border: 2px solid #000;
-  outline: 1px solid #fff;
-  outline-offset: -1px;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
+  content: '';
+  display: block;
+  background-color: #FFF;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px 0 0 1px;
 }
 
 .button {
@@ -222,13 +219,8 @@ video {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
-  scrollbar-width: none;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__list-item:not(:last-child) {
