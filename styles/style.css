@@ -157,9 +157,9 @@ video {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: block;
-  background-color: #FFF;
+  background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
   margin: 1px 0 0 1px;
@@ -283,4 +283,5 @@ video {
   block-size: 103px;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 }
